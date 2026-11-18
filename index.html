@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Goku | El guerrero más fuerte del universo</title>
+  <meta name="description" content="Página fan de Goku: su historia, sus transformaciones, sus técnicas y su nivel de poder." />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🐉</text></svg>" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <a class="skip-link" href="#inicio">Saltar al contenido</a>
+
+  <header class="header" id="header">
+    <nav class="nav" aria-label="Navegación principal">
+      <a class="logo" href="#inicio">
+        <span class="logo-kanji">悟</span>
+        <span class="logo-texto">GOKU</span>
+      </a>
+
+      <button class="nav-toggle" id="nav-toggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="nav-menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <ul class="nav-menu" id="nav-menu">
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#historia">Historia</a></li>
+        <li><a href="#transformaciones">Transformaciones</a></li>
+        <li><a href="#tecnicas">Técnicas</a></li>
+        <li><a href="#poder">Poder</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero" id="inicio">
+      <div class="hero-bg" aria-hidden="true">
+        <span class="orb orb-1"></span>
+        <span class="orb orb-2"></span>
+        <span class="orb orb-3"></span>
+      </div>
+
+      <div class="hero-contenido">
+        <div class="hero-texto">
+          <p class="badge">Saiyan · Clase baja · Tierra</p>
+          <h1 class="titulo">
+            <span class="titulo-kanji" aria-hidden="true">悟空</span>
+            GOKU
+          </h1>
+          <p class="hero-sub">
+            El guerrero que nunca deja de superarse. Defensor de la Tierra,
+            rival de dioses y campeón del Torneo del Poder.
+          </p>
+          <div class="hero-botones">
+            <a class="btn btn-primario" href="#transformaciones">Ver transformaciones</a>
+            <button class="btn btn-fantasma" id="btn-kamehameha" type="button">¡Kamehameha!</button>
+          </div>
+
+          <dl class="hero-datos">
+            <div>
+              <dt>Raza</dt>
+              <dd>Saiyan</dd>
+            </div>
+            <div>
+              <dt>Planeta</dt>
+              <dd>Vegeta</dd>
+            </div>
+            <div>
+              <dt>Técnica</dt>
+              <dd>Kamehameha</dd>
+            </div>
+          </dl>
+        </div>
+
+        <div class="hero-visual" aria-hidden="true">
+          <div class="aura" id="aura-hero">
+            <div class="aura-anillo"></div>
+            <svg class="goku-svg" viewBox="0 0 200 220" role="presentation">
+              <defs>
+                <linearGradient id="piel" x1="0" y1="0" x2="0" y2="1">
+                  <stop offset="0%" stop-color="#ffd8b0" />
+                  <stop offset="100%" stop-color="#f2a86a" />
+                </linearGradient>
+                <linearGradient id="traje" x1="0" y1="0" x2="1" y2="1">
+                  <stop offset="0%" stop-color="#ff7a1a" />
+                  <stop offset="100%" stop-color="#e04e00" />
+                </linearGradient>
+              </defs>
+
+              <!-- pelo -->
+              <path class="pelo-svg"
+                d="M62 104 L40 58 L70 76 L66 30 L90 62 L100 14 L110 62 L134 30 L130 76 L160 58 L138 104 Z" />
+              <!-- cabeza -->
+              <circle cx="100" cy="112" r="40" fill="url(#piel)" />
+              <!-- ojos -->
+              <g class="ojos-svg">
+                <ellipse cx="86" cy="106" rx="5" ry="7" />
+                <ellipse cx="114" cy="106" rx="5" ry="7" />
+              </g>
+              <!-- cuerpo -->
+              <path d="M66 150 Q100 136 134 150 L146 200 L54 200 Z" fill="url(#traje)" />
+              <path d="M66 150 Q100 136 134 150 L130 166 Q100 154 70 166 Z" fill="#1f4ea8" opacity=".85" />
+              <circle cx="100" cy="176" r="12" fill="#0f1a2e" stroke="#ffd166" stroke-width="3" />
+              <text x="100" y="181" text-anchor="middle" class="kanji-svg">悟</text>
+            </svg>
+          </div>
+          <div class="energia" id="energia"></div>
+        </div>
+      </div>
+
+      <div class="scroll-hint" aria-hidden="true">Desliza <span>↓</span></div>
+    </section>
+
+    <!-- HISTORIA -->
+    <section class="seccion" id="historia">
+      <div class="contenedor">
+        <header class="seccion-header reveal">
+          <p class="eyebrow">Línea de tiempo</p>
+          <h2>La historia de un héroe</h2>
+          <p class="seccion-sub">De un bebé enviado a la Tierra a rival de los dioses de la destrucción.</p>
+        </header>
+
+        <ol class="timeline">
+          <li class="timeline-item reveal">
+            <span class="timeline-punto" aria-hidden="true"></span>
+            <div class="timeline-card">
+              <span class="timeline-etapa">Origen</span>
+              <h3>Un saiyan llamado Kakarotto</h3>
+              <p>Nació en el planeta Vegeta y fue enviado a la Tierra siendo un bebé. Allí lo encontró Son Gohan, quien le puso el nombre de Goku y le enseñó el valor de la bondad.</p>
+            </div>
+          </li>
+          <li class="timeline-item reveal">
+            <span class="timeline-punto" aria-hidden="true"></span>
+            <div class="timeline-card">
+              <span class="timeline-etapa">Entrenamiento</span>
+              <h3>El alumno de Kame-Sen'nin</h3>
+              <p>Bajo la tutela del Maestro Roshi aprendió el Kamehameha y conoció a Bulma, Krilin y Yamcha. Juntos vivieron sus primeras grandes aventuras.</p>
+            </div>
+          </li>
+          <li class="timeline-item reveal">
+            <span class="timeline-punto" aria-hidden="true"></span>
+            <div class="timeline-card">
+              <span class="timeline-etapa">Defensor</span>
+              <h3>El guerrero legendario</h3>
+              <p>En Namek se convirtió por primera vez en Super Saiyan al perder a Krilin. Desde entonces protegió la Tierra de Freezer, Cell y Majin Buu.</p>
+            </div>
+          </li>
+          <li class="timeline-item reveal">
+            <span class="timeline-punto" aria-hidden="true"></span>
+            <div class="timeline-card">
+              <span class="timeline-etapa">Dioses</span>
+              <h3>Más allá de los límites</h3>
+              <p>Alcanzó el Super Saiyan God y el Super Saiyan Blue, y en el Torneo del Poder despertó el Ultra Instinto: el estado de los ángeles.</p>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- TRANSFORMACIONES -->
+    <section class="seccion seccion-alt" id="transformaciones">
+      <div class="contenedor">
+        <header class="seccion-header reveal">
+          <p class="eyebrow">Evolución</p>
+          <h2>Transformaciones</h2>
+          <p class="seccion-sub">Elige una forma y descubre su nivel de poder.</p>
+        </header>
+
+        <div class="formas reveal">
+          <div class="formas-tabs" role="tablist" aria-label="Transformaciones de Goku">
+            <button class="tab activo" role="tab" aria-selected="true" data-forma="base">Base</button>
+            <button class="tab" role="tab" aria-selected="false" data-forma="kaioken">Kaio-ken</button>
+            <button class="tab" role="tab" aria-selected="false" data-forma="ssj">SSJ</button>
+            <button class="tab" role="tab" aria-selected="false" data-forma="ssj2">SSJ2</button>
+            <button class="tab" role="tab" aria-selected="false" data-forma="ssj3">SSJ3</button>
+            <button class="tab" role="tab" aria-selected="false" data-forma="god">SSJ God</button>
+            <button class="tab" role="tab" aria-selected="false" data-forma="blue">SSJ Blue</button>
+            <button class="tab" role="tab" aria-selected="false" data-forma="ultra">Ultra Instinto</button>
+          </div>
+
+          <div class="forma-panel" id="forma-panel">
+            <div class="forma-visual">
+              <div class="forma-aura" id="forma-aura">
+                <div class="forma-anillo"></div>
+                <svg class="goku-svg" viewBox="0 0 200 220" role="presentation">
+                  <path class="pelo-svg" d="M62 104 L40 58 L70 76 L66 30 L90 62 L100 14 L110 62 L134 30 L130 76 L160 58 L138 104 Z" />
+                  <circle cx="100" cy="112" r="40" fill="url(#piel2)" />
+                  <g class="ojos-svg">
+                    <ellipse cx="86" cy="106" rx="5" ry="7" />
+                    <ellipse cx="114" cy="106" rx="5" ry="7" />
+                  </g>
+                  <path d="M66 150 Q100 136 134 150 L146 200 L54 200 Z" fill="url(#traje2)" />
+                  <path d="M66 150 Q100 136 134 150 L130 166 Q100 154 70 166 Z" fill="#1f4ea8" opacity=".85" />
+                  <circle cx="100" cy="176" r="12" fill="#0f1a2e" stroke="#ffd166" stroke-width="3" />
+                  <text x="100" y="181" text-anchor="middle" class="kanji-svg">悟</text>
+                  <defs>
+                    <linearGradient id="piel2" x1="0" y1="0" x2="0" y2="1">
+                      <stop offset="0%" stop-color="#ffd8b0" />
+                      <stop offset="100%" stop-color="#f2a86a" />
+                    </linearGradient>
+                    <linearGradient id="traje2" x1="0" y1="0" x2="1" y2="1">
+                      <stop offset="0%" stop-color="#ff7a1a" />
+                      <stop offset="100%" stop-color="#e04e00" />
+                    </linearGradient>
+                  </defs>
+                </svg>
+              </div>
+            </div>
+
+            <div class="forma-info">
+              <h3 id="forma-nombre">Goku base</h3>
+              <p id="forma-desc">Su estado natural: tranquilo, hambriento y siempre listo para entrenar.</p>
+
+              <div class="poder-caja">
+                <span class="poder-label">Nivel de poder</span>
+                <strong class="poder-valor" id="forma-poder">10.000</strong>
+              </div>
+
+              <ul class="forma-lista" id="forma-lista">
+                <li><span>Cabello</span><strong id="dato-cabello">Negro</strong></li>
+                <li><span>Aura</span><strong id="dato-aura">Blanca</strong></li>
+                <li><span>Primera aparición</span><strong id="dato-aparicion">Dragon Ball, cap. 1</strong></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TÉCNICAS -->
+    <section class="seccion" id="tecnicas">
+      <div class="contenedor">
+        <header class="seccion-header reveal">
+          <p class="eyebrow">Arsenal</p>
+          <h2>Técnicas legendarias</h2>
+          <p class="seccion-sub">Los ataques que han salvado al universo más de una vez.</p>
+        </header>
+
+        <div class="grid-tecnicas">
+          <article class="tecnica reveal">
+            <span class="tecnica-icono" aria-hidden="true">波</span>
+            <h3>Kamehameha</h3>
+            <p>Onda de energía concentrada entre las manos. La técnica insignia de la Escuela Tortuga.</p>
+            <span class="tecnica-tag">Energía</span>
+          </article>
+
+          <article class="tecnica reveal">
+            <span class="tecnica-icono" aria-hidden="true">元</span>
+            <h3>Genkidama</h3>
+            <p>Reúne la energía de todos los seres vivos del planeta en una única esfera imparable.</p>
+            <span class="tecnica-tag">Energía vital</span>
+          </article>
+
+          <article class="tecnica reveal">
+            <span class="tecnica-icono" aria-hidden="true">界</span>
+            <h3>Kaio-ken</h3>
+            <p>Multiplica al instante el ki y la velocidad, a costa de someter el cuerpo a una tensión extrema.</p>
+            <span class="tecnica-tag">Potenciación</span>
+          </article>
+
+          <article class="tecnica reveal">
+            <span class="tecnica-icono" aria-hidden="true">瞬</span>
+            <h3>Teletransportación</h3>
+            <p>Salto instantáneo entre dos puntos detectando un ki conocido. Aprendida en el planeta Yardrat.</p>
+            <span class="tecnica-tag">Movimiento</span>
+          </article>
+
+          <article class="tecnica reveal">
+            <span class="tecnica-icono" aria-hidden="true">舞</span>
+            <h3>Fusión</h3>
+            <p>Con la danza de la fusión, Goku y Vegeta se convierten en Gogeta por un breve espacio de tiempo.</p>
+            <span class="tecnica-tag">Combinación</span>
+          </article>
+
+          <article class="tecnica reveal">
+            <span class="tecnica-icono" aria-hidden="true">極</span>
+            <h3>Ultra Instinto</h3>
+            <p>El cuerpo esquiva y ataca por reflejo, sin la intervención del pensamiento consciente.</p>
+            <span class="tecnica-tag">Estado</span>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- PODER -->
+    <section class="seccion seccion-alt" id="poder">
+      <div class="contenedor">
+        <header class="seccion-header reveal">
+          <p class="eyebrow">Estadísticas</p>
+          <h2>El poder en números</h2>
+          <p class="seccion-sub">Datos de una carrera que desafía cualquier escala.</p>
+        </header>
+
+        <div class="stats">
+          <div class="stat reveal">
+            <span class="stat-numero" data-contador="8">0</span>
+            <span class="stat-label">Transformaciones</span>
+          </div>
+          <div class="stat reveal">
+            <span class="stat-numero" data-contador="40" data-sufijo="+">0</span>
+            <span class="stat-label">Años de historia</span>
+          </div>
+          <div class="stat reveal">
+            <span class="stat-numero" data-contador="7">0</span>
+            <span class="stat-label">Esferas del Dragón</span>
+          </div>
+          <div class="stat reveal">
+            <span class="stat-numero" data-contador="100">0</span>
+            <span class="stat-label">Hambre (de ramen)</span>
+          </div>
+        </div>
+
+        <blockquote class="frase reveal">
+          <p>“¡Hola! Soy Goku.”</p>
+          <footer>— Son Goku, cada vez que conoce a alguien nuevo</footer>
+        </blockquote>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p class="footer-kanji" aria-hidden="true">ドラゴンボール</p>
+    <p>Página fan creada con HTML, CSS y JavaScript.</p>
+    <p class="footer-credito">Dragon Ball © Akira Toriyama / Toei Animation. Sin ánimo de lucro.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
